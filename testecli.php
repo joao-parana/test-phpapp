@@ -10,10 +10,14 @@ print_r(PHP_EOL);
 // http://zetcode.com/databases/mysqlphptutorial/ estruta OK
 // mais obsoleto na API
 
-$host = "127.0.0.1";
-$user = "wp";
-$pass = "secret";
-$db = "my-db";
+$host = "mysql";
+$user = getenv('DB_USER');
+$pass = getenv('DB_PASSWORD');
+$db = getenv('DB_NAME');
+
+print_r(PHP_EOL . 'host = ' . $host . ', db = '. $db .
+        ', user = ' . $user . ', passwd = ' . $pass . '' . PHP_EOL);
+
 /*
   MYSQL_ROOT_PASSWORD=xpto
  */
