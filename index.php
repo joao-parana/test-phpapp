@@ -57,6 +57,5 @@
         alert('Veio Server Name =' + $('#server_name').text());
       }
     </script>
-    <?php phpinfo(); ?>
   </body>
 </html>
